@@ -30,3 +30,13 @@ function quadrado(){
         document.write("O quadrado de " + i + " é " + (i*i) + "<br>");
     }
 }
+
+function calcula(){
+    let val = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+
+    let res = val * (1+(j/100));
+    
+    document.write("Resultado: "+res);
+}
