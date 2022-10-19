@@ -40,3 +40,30 @@ function calcula(){
     
     document.write("Resultado: "+res);
 }
+
+function somarNotas(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    document.getElementById("resultadosoma").innerHTML = "Soma: " + r;
+}
+
+function mediaNotas(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    r = r / Number(3)
+    document.getElementById("resultadomedia").innerHTML = "Média: " + r;
+}
+
+function fecharNotas(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    r = 180 - r;
+    document.getElementById("resultadofechar").innerHTML = "Falta: " + r;
+}
+
