@@ -35,9 +35,32 @@ function calcula(){
     let val = document.getElementById("valor").value;
     let j = document.getElementById("juros").value;
     let t = document.getElementById("meses").value;
+    if(!Number(val)){
+        alert("O valor deve ser um NÚMERO.");
+        document.getElementById("valor").value = "";
+        document.getElementById("valor").focus();
+        return
+    }
+    if(!Number(j)){
+        alert("O valor dos juros deve ser um NÚMERO.");
+        document.getElementById("juros").value = "";
+        document.getElementById("juros").focus();
+        return
+    }
+    if(!Number(t)){
+        alert("O valor do tempo deve ser um NÚMERO.");
+        document.getElementById("meses").value = "";
+        document.getElementById("meses").focus();
+        return
+    }
 
-    let res = val * (1+(j/100));
     
+    let res = val;
+    for(let m=1; m <= t; m++){
+        res = val * (1+(j/100));
+        val = res;
+        document.write("Mês " + m + " = " + res + "<br>")
+    }
     document.write("Resultado: "+res);
 }
 
