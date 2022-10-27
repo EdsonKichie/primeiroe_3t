@@ -1,1 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 
+.calculadora {
+    background: rgb(255, 244, 145);
+    width: 200px;
+    color: black;
+    padding: 20px;
+    border-radius: 30px;
+
+}
+
+.calculadora input {
+    background: rgba(212, 204, 204, 0.307);
+    color: rgba(0, 0, 0, 0.739);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#btnCalc {
+    background: rgb(255, 196, 86);
+    margin-top: 20px;
+    padding: 8px;
+}
+
+#btnCalc:hover {
+    background: orange;
+    color: white;
+    cursor: pointer;
+}
+
+#psTotal {
+    background: rgb(243, 219, 0);
+    color: white;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
