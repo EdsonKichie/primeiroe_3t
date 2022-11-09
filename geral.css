@@ -20,6 +20,23 @@ body {
     padding: 8px;
 }
 
+.calcF {
+    display: none;
+}
+
+#calcFin {
+    display: none;
+}
+
+#calcFin:checked + .calculadora .calcF {
+    display: block;
+}
+
+.calculadora input:focus {
+    background: white;
+    color: black;
+}
+
 #btnCalc {
     background: rgb(255, 196, 86);
     margin-top: 20px;
